@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /*
+            string - prymityw czyli typ prosty wartości, która możemy zapisać
+            w zmiennej lub stałej. To w praktyce łańcuch znaków zwany również:
+            literałem znakowym lub literałem łańcuchowym. Tworzymy go za pomocą
+            cudzysłowa lub apostrofów.
+        */
+
+        let str = "Hello World";
+        console.log(str);
+
+        let str2 = str + " and hello again!";
+        console.log(str2); // Hello World and hello again!
+        console.log(str2.length); // 28, indeksy od 0 do 27
+
+        console.log(str2[0]); // H
+        console.log(str2[1]); // e
+        console.log(str2[str2.length -1]); // !
+
+    </script>
+</body>
+</html>
