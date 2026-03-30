@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /*
+            Identyfikator to nazwa zmiennej nadawana przez programistę dzięki
+            której może odwołać się w programie do danego miejsca w pamięci,
+            gdzie przechowana jest wartość.
+            Identyfikatory muszą zaczynać się literą lub znakiem $ lub _ ,
+            nie mogą mieć w nazwie spacji, przecinka, kropki itd.
+            Słowa kluczowe nie mogą być identyfikatorami.
+        */
+
+        // const const = 10; // SyntaxError: missing variable name, got keyword 'const'
+        const const1 = 10;
+
+        let numStudents = 300; // camelCase
+
+        let carColor = "red";
+        // let car color = "red"; // SyntaxError: unexpected token: identifier
+        // let top%Speed = 230; // SyntaxError: unexpected token: '%'
+        // let car.Acceleration = 5; // SyntaxError: unexpected token: '.'
+        // let 2carNumDoors = 2; // SyntaxError: identifier starts immediately after numeric literal
+
+        const _data = "test";
+        let $str = "Ola";
+
+        // const _data = 123; // SyntaxError: redeclaration of const _data
+        const _DATA = 123;
+
+
+    </script>
+</body>
+</html>
