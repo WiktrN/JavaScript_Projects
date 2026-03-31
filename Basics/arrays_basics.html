@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /*
+            Array - tablice to specjalne obiekty w JavaScript,
+                    które mogą przechowywać różne dane. Do
+                    poszczególnyc wartości możemy się dostać
+                    dzięki indeksom oraz nawiasom kwadratowym
+                    (notacja tablicowa).
+        */
+        
+        let brands = ["sony", "lenovo", "dell", "google", "microsoft"];
+        console.log(brands);
+        console.log(brands[0]); // sony
+        console.log(brands[1]); // lenvo
+        console.log(brands[brands.length - 1]); // microsoft
+        console.log(brands.length); // 5
+
+        brands[3] = "acer";
+        console.log(brands);
+
+        let data = [1, 2, true, "Asia", {a: 12}];
+
+        let arrObjects = [
+            {name: "Kasia", age: 28, favColor: "red"},
+            {name: "Ola", age: 21, favColor: "blue"},
+            {name: "Adam", age: 25, favColor: "green"},
+        ]
+
+        console.log(arrObjects);
+
+    </script>
+</body>
+</html>

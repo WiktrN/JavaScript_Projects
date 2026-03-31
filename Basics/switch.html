@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /*
+            switch - pozwala na proste porównanie czy dana zmienna posaida jedną
+                     z wartości. Gdy dany case jest spełniony następuje wyjście
+                     z konstruckji switch.
+        */
+
+        let num = 22;
+
+        switch(num) {
+            case 5:
+                console.log("num jest równe 5");
+                break;
+            case 12:
+                console.log("num jest równe 12")
+                break;
+            case 18:
+                console.log("num jest równe 18")
+                break;
+            case 22:
+                console.log("num jest równe 22")
+                break;
+            default:
+                console.log("Domyślny kod");
+                break; 
+        }
+
+        let txt = "Kasia"
+
+        switch(txt) {
+            case "Ola":
+                console.log("txt jest równe Ola");
+                break;
+            case "Asia":
+                console.log("txt jest równe Asia");
+                break;
+            case "Kasia":
+                console.log("txt jest równe Kasia");
+                break;
+            default:
+                console.log("Domyślny kod");
+                break; 
+        }
+
+        let n = 3;
+        switch (n) {
+            case 0:
+            case 2:
+            case 4:
+            case 6:
+            case 8:
+            case 10:
+                console.log(n, "jest parzyste");
+                break;
+                        case 0:
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 9:
+                console.log(n, "nie jest parzyste");
+                break;
+            default:
+                console.log(n, "spoza testowanego przedziału");
+        }
+
+    </script>
+</body>
+</html>

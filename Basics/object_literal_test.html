@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /*
+            Obiekt - zadanie
+            1. Utwórz obiekt opisujący samochód
+                z pomocą notacji literału obiektu np.:
+                let dog = {
+                    name: "Szarik",
+                    surname: "Krawat"
+                };
+            2. Możesz zastosować następujące dane
+                opisujące auto jak: marka, nazwa,
+                prędkość maksymalna itd
+            3. Wyświetl cały obiekt w konsoli
+            4. Zmień nazwę auta poza notacją
+                obiektu czyli zastosuj kropkę np dog.name = "Kapitan"
+                Pokaż ponownie w konsoli zaktualizowany obiekt.
+        */
+
+        let car = {
+            brand: "Mazda",
+            name: "rx8",
+            productionYear: 1993,
+            maxSpeed: "220km/h",
+            color: "White"
+        };
+
+        console.log(car);
+
+        car.name = "rx7";
+
+        console.log(car);
+
+    </script>
+</body>
+</html>
