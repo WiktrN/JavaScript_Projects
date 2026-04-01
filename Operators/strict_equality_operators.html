@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+    /*
+        Ścisłe operatory porównania tzn. === sprawdzają zarówno czy 
+        obie wartości są równe, ale dodatkowo czy ich typ jest taki
+        sam. Jeżeli wartości są takie same np ze względu
+        na automatyczną konwersję, ale typ się nie zgadza
+        to === zwróci false 
+    */
+
+    console.log(4 == 4); // true
+    console.log(4 == "4"); // true
+
+    console.log(4 === "4"); // false, bo typ wartości się nie zgadza
+    console.log(4 === 4); // true, zgadza się typ - liczby i wartość
+    console.log(4 === 5); // false
+
+    console.log(5 !== 5); // false, bo zgadzane są takie same: typ i wartość
+    console.log(5 !== "5"); // true, nie są równe bo typ się nie zgadza
+
+    </script>
+</body>
+</html>
