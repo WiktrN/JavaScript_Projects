@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /* 
+            relational operators - operatory relacyjne porównują
+            operandy i zwracają true jeśli spełnione jest porównanie
+        */
+
+        let obj = { a: 12, b: 14, c: 15 };
+
+        console.log( "b" in obj ); // true
+        console.log( "d" in obj ); // false
+
+        let arr = ["f", "g", "h", "i"];
+
+        console.log( 0 in arr ); // true
+        console.log( 7 in arr ); // true
+
+        let date = new Date(2030, 12, 15);
+        if (date instanceof Date) console.log("Prawidłowa data");
+
+    </script>
+</body>
+</html>
