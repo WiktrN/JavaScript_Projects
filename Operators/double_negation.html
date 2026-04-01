@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /* 
+            Negacja wymusza konwersję na boolean i odwraca znak,
+            ale podwójna negacja w praktyce konwertuje
+            "prawdziwe" wartości na true, "falsy" na false
+        */
+
+        console.log(!1); // false, bo ! wymusza konwersję na boolean
+        console.log(!-1); // false, wartość różna od zera zmieniana jest na true
+        console.log(!0); // true
+
+        console.log(!!1); // true
+        console.log(!!-1); // true
+        console.log(!!0); // false
+
+    </script>
+</body>
+</html>
