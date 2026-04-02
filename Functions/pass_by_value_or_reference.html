@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /*
+            Prymitywy przekazywane są przez kopię, a obiekty przez
+            referencję, czyli tak naprwadę wskaźnik do adresu
+            pamięci gdzie rezyduje obiekt.
+            Obiekty zatem mogą być zmienaine po przekazaniu do funkcji.
+        */
+
+        function foo(num, obj) {
+            num = 12;
+            obj.data = "test!";
+        }
+
+        let a = 7;
+        let data = { data: "text" };
+
+        foo(a, data);
+
+        console.log("a: ", a); // 7
+        console.log("data: ", data); // "test!"
+
+    </script>
+</body>
+</html>
