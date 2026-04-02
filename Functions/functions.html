@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /*
+            Funkcje pozwalają na wielokrotne wywołanie danego kodu.
+            Tworzymy je za pomocą słowa kluczowego function oraz
+            dowolnej nazwy funkji. Wywołujemy ją za pomocą
+            nawiasów okrągłych ()
+            Funckja może przyjmować dane przy jej wywołaniu,
+            w deklaracji podajemy je po przecinku i są to
+            wewnętrzne zmienne funkcji zwane parametrami.
+            Natomiast przy wywołaniu funkcji przekazywane
+            dane do funkcji nazywamy parametrami.
+        */
+
+        // dekleracja funkcji
+        // a, b, c, d to parametry
+        function test(a, b, c, d) {
+            let sum = a + b + c + d;
+
+            return sum;
+        }
+
+        // wywołanie funkcji
+        // 1, 2, 3, 4 to argumenty
+        let result = test(1,2,3,4);
+
+        console.log(result);
+
+    </script>
+</body>
+</html>
