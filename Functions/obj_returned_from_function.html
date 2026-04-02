@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+
+        * {
+            margin: 20px 2px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        /*
+            Funckję mogą zwracać również obiekty
+        */
+        
+        function hireEmployee(name, surname, email, age, profession){
+            if (name.length < 3) return null;
+            if (surname.length < 3) return null;
+            if (email.length < 3) return null;
+            if (age < 18) return null;
+            if (profession.length < 3) return null;
+
+            if (profession != "programmer"
+                && profession != "admin"
+                && profession != "mangaer") {
+                    return null;
+                }
+            
+            const obj = {
+                company: "Example Ltd.",
+                name: name,
+                surname: surname,
+                email: email,
+                age: age,
+                profession: profession
+            };
+
+            return obj;
+
+        }
+
+        const employee1 = hireEmployee("Kasia", "Kowalska", "kasia@gmail.com", 
+                                        20, "programer");
+        
+        console.log(employee1);
+
+        const employee2 = hireEmployee("K", "Kowalska", "kasia@gmail.com", 
+                                        20, "programer");
+        
+        console.log(employee2);
+
+    </script>
+</body>
+</html>
